@@ -1,0 +1,124 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.webcam {
+  width: 100%;
+  height: 300px;
+}
+
+nav {
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  border-bottom: 1px #efe2e2 solid;
+  padding: 20px;
+  font-weight: 800;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col {
+  display: flex;
+}
+.row {
+  width: 50%;
+  margin-left: 20px;
+
+  padding: 20px;
+  height: 100vh;
+}
+.col .row:first-child {
+  border-right: 1px rgb(27 26 26) solid;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 20px;
+  background-color: #2918d4;
+  margin-left: 10px;
+  border: 1px rgb(0 0 0 / 32%) solid;
+}
+
+button:hover {
+  border: 1px rgba(200, 12, 12, 0.315) solid;
+  color: white;
+}
+.buttongroup {
+  display: flex;
+  justify-content: center;
+}
+
+.outputimage {
+  width: 400px;
+}
+
+.outputimagegroup {
+  margin-top: 0px;
+}
+@media only screen and (max-width: 800px) {
+  .col {
+    display: block;
+  }
+  .row {
+    width: 100%;
+    height: min-content;
+  }
+  .col .row:first-child {
+    border-bottom: 1px rgb(185, 185, 185) solid;
+  }
+}
+
+.microphone {
+  animation-name: mic;
+  animation-duration: 1s;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes mic {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+}
